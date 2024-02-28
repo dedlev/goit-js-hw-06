@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .gallery {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .img {
+        width: 480px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+          width: 768px;
+        }
+
+        @media screen and (min-width: 1260px) {
+          width: 1260px;
+        }
+      }
+
+      .image:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <ul class="gallery"></ul>
+
+    <script src="js/task-03.js" type="module"></script>
+  </body>
+</html>
