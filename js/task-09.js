@@ -5,11 +5,10 @@ const changeColorBtn = document.querySelector('.change-color');
 changeColorBtn.addEventListener('click', onClick);
 
 function onClick() {
+  const changeColor = getRandomHexColor();
   body.style.backgroundColor = changeColor;
   spanColorEl.textContent = changeColor;
 }
-
-const changeColor = getRandomHexColor();
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
